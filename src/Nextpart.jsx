@@ -6,7 +6,7 @@ function Nextpart() {
       <h1 className="flex justify-center text-base font-bold text-blue-600">
         OWN YOUR CONTENT
       </h1>
-      <h2 className="mt-3 justify-center text-center text-4xl md:text-5xl font-bold">
+      <h2 className="mt-3 justify-center sm:text-4xl text-2xl  text-center text-4x md:text-5xl font-bold">
         No Ads. No Paywall. <span className="Home">No Kidding.</span>
       </h2>
       <div className="mt-10 md:px-8 md:gap-4 lg:px-10 lg:gap-10 gap-0 md:flex md:justify-center  md:space-y-0 space-y-7">
