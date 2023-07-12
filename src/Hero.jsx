@@ -14,10 +14,10 @@ function Hero() {
             />
           </div>
           <div className="md:space-y-10 w-auto md:w-3/5 space-y-5 lg:w-1/2">
-            <h1 className="mt-2 text-center md:text-start text-4xl lg:text-6xl font-bold">
+            <h1 className="mt-2 text-center text-3xl md:text-start sm:text-4xl lg:text-6xl font-bold">
               <span className="Home">Home</span> for tech writers and readers
             </h1>
-            <h2 className="text-center md:text-start mx-4 lg:mr-8 md:mx-0 text-xl">
+            <h2 className="text-center md:text-start mx-2 sm:mx-4 lg:mr-8 md:mx-0 text-xl">
               The hassle-free blogging platform for engineers, thought-leaders,
               and the dev community!
             </h2>
@@ -26,7 +26,7 @@ function Hero() {
               with the world.
             </h2>
             <div className="flex justify-center md:justify-start">
-              <button className="font- h-12 w-60 rounded-full bg-blue-600 text-xl text-white hover:bg-blue-800">
+              <button className="sm:h-12 h-10 w-60 rounded-full bg-blue-600 text-xl text-white hover:bg-blue-800">
                 Get started - it&apos;s free!
               </button>
             </div>
