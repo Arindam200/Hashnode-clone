@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 function Map() {
   return (
-    <div className="mt-20 md:flex md:flex-row-reverse rounded-xl border bg-white py-6 px-8">
+    <div className="mt-20 -mx-5 sm:mx-0 md:flex md:flex-row-reverse rounded-xl border bg-white py-6 px-8">
       <div className="mt-8 md:w-2/5">
         <img
           src="https://cdn.hashnode.com/res/hashnode/image/upload/v1643394967065/pOn8uxJFD.png?auto=compress"
@@ -18,11 +18,11 @@ function Map() {
           your personal domain, share ideas, and connect with the global tech
           community.
         </h2>
-        <div className="flex gap-4 pt-5">
-          <button className="flex justify-center rounded-full bg-blue-600 px-8 py-2 sm:py-3 text-lg font-semibold text-white hover:bg-blue-800">
+        <div className="sm:flex gap-4 space-y-2 sm:space-y-0 pt-5">
+          <button className="flex justify-center rounded-full bg-blue-600 sm:px-8 px-2 py-2 sm:py-3 text-sm sm:text-lg font-semibold text-white hover:bg-blue-800">
             Get Started- it's free
           </button>
-          <button className="flex justify-center rounded-full bg-inherit border border-blue-600 text-blue-600 px-8 py-2 sm:py-3 text-lg hover:bg-blue-800">
+          <button className="flex px-6 justify-center rounded-full bg-inherit border border-blue-600 text-blue-600 text-sm sm:px-8 py-1 sm:py-3 sm:text-lg hover:bg-blue-800">
             Login
           </button>
         </div>

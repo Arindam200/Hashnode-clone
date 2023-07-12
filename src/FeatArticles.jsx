@@ -2,11 +2,11 @@ function FeatArticle() {
   return (
     <div className="m-4  xl:mx-36 2xl:mx-56 mb-0 mt-0 bg-[#0f172a] border-x  px-5 py-12">
       <h1 className="flex justify-center text-green-500">FROM THE COMMUNITY</h1>
-      <h2 className="flex justify-center text-5xl sm:text-4xl md:text-5xl font-bold text-white">
+      <h2 className="flex justify-center text-center sm:text-start  text-4xl sm:text-4xl md:text-5xl font-bold text-white">
         Featured articles today
       </h2>
-      <div className="mt-14 justify-around space-y-5 px-4">
-        <div className="md:flex md:gap-10">
+      <div className="mt-14 justify-around space-y-5 px-1 sm:px-4">
+        <div className="md:flex space-y-5 md:gap-10">
           <div className="rounded-lg bg-white">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1686011601747/bf5532a0-6d78-41fa-9232-f4479ca4b78b.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
@@ -62,7 +62,7 @@ function FeatArticle() {
             </div>
           </div>
         </div>
-        <div className="md:flex md:gap-10">
+        <div className="md:flex space-y-5 md:gap-10">
           <div className="rounded-lg bg-white">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1685860276418/69ab5b08-611a-44dc-ab14-3dd9ffad63ec.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
@@ -120,7 +120,7 @@ function FeatArticle() {
             </div>
           </div>
         </div>
-        <div className="md:flex md:gap-10">
+        <div className="md:flex space-y-5 md:gap-10">
           <div className="rounded-lg bg-white">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1686020838726/9f4e918a-d62c-4baa-9d83-cb30e423bdcc.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"

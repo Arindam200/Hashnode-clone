@@ -16,7 +16,7 @@ function Features() {
   return (
     <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 mt-0 border-x px-10 py-10">
       <div className="">
-        <div className="md:flex md:p-10 md:gap-10 gap-10 rounded-lg border border-slate-900 bg-slate-100 p-8">
+        <div className="md:flex space-y-3 sm:space-y-0 md:p-10 md:gap-10 gap-10 rounded-lg border border-slate-900 bg-slate-100 p-8">
           <div className="flex justify-center w-auto md:w-1/3">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1584725566758/W2boEyqqw.png?w=400&h=400&fit=crop&crop=faces&auto=compress,format&format=webp&q=75"
@@ -25,7 +25,7 @@ function Features() {
             />
           </div>
 
-          <div className=" space-y-2 text-xl font-normal">
+          <div className=" space-y-2 sm:text-xl text-lg font-normal">
             <h1>
               &quot;Just started out on Hashnode about 1 month ago, and I&apos;m
               already at 14,000 page views. Really impressed with how much
@@ -49,14 +49,14 @@ function Features() {
           <h2 className="mt-5 text-center text-3xl md:text-4xl font-bold">
             Features that make tech blogging
           </h2>
-          <h3 className="mt-1 text-center md:flex md:justify-center text-3xl md:text-4xl font-bold Home">
+          <h3 className="mt-1 text-center flex justify-center md:flex md:justify-center text-3xl md:text-4xl font-bold Home">
             10x better
           </h3>
         </div>
       </div>
 
-      <div className="mt-14 md:flex md:p-5">
-        <div className="flex md:w-1/2 gap-5 p-5">
+      <div className="sm:mt-14 mt-2  md:flex md:p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={NextLogo} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">
@@ -68,7 +68,7 @@ function Features() {
             </h2>
           </div>
         </div>
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={Data} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">Own your data</h1>
@@ -80,7 +80,7 @@ function Features() {
         </div>
       </div>
       <div className="mt-1 md:flex md:p-5 gap-2">
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={Pen} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">
@@ -93,7 +93,7 @@ function Features() {
             </h2>
           </div>
         </div>
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={NewsLetter} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">
@@ -107,7 +107,7 @@ function Features() {
         </div>
       </div>
       <div className="mt-1 md:flex md:p-5 gap-2">
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={Analytics} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">Built-in Analytics</h1>
@@ -118,7 +118,7 @@ function Features() {
             </h2>
           </div>
         </div>
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={Series} className="h-8" />
           <div>
             <h1 className="text-2xl font-semibold">Article Series</h1>
@@ -130,7 +130,7 @@ function Features() {
         </div>
       </div>
       <div className="mt-1 md:flex md:p-5 gap-2">
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={Drafts} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">Drafts</h1>
@@ -140,7 +140,7 @@ function Features() {
             </h2>
           </div>
         </div>
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={HTTPS} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">HTTPS by default</h1>
@@ -153,7 +153,7 @@ function Features() {
         </div>
       </div>
       <div className="mt-1 md:flex md:p-5 gap-2">
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={GitHub} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">
@@ -165,7 +165,7 @@ function Features() {
             </h2>
           </div>
         </div>
-        <div className="flex md:w-1/2 gap-5 p-5">
+        <div className="flex md:w-1/2 gap-5 p-1 sm:p-5">
           <img src={People} className="h-8" alt="" />
           <div>
             <h1 className="text-2xl font-semibold">Unlimited Staff Users</h1>
@@ -178,15 +178,15 @@ function Features() {
       </div>
       <Teams />
       <Map />
-      <hr className="border-1 my-20 mb-0 h-px border-slate-700" />
+      <hr className="border-1 my-20 mb-0 h-px  border-slate-700" />
       <h3 className="mt-10 text-center">© Hashnode 2023</h3>
-      <div className="flex justify-center gap-10 py-4">
-        <button>Privacy Policy</button>
-        <button>Terms</button>
-        <button>Code of Conduct</button>
+      <div className="flex my-5 justify-center sm:gap-10 gap-5 sm:py-4">
+        <button className="text-sm sm:text-base">Privacy Policy</button>
+        <button className="text-sm sm:text-base">Terms</button>
+        <button className="text-sm sm:text-base">Code of Conduct</button>
       </div>
       <div className="flex justify-center">
-        <img src={Hashnode} className="h-10 md:h-8" />
+        <img src={Hashnode} className="h-5 sm:h-10 md:h-8" />
       </div>
     </div>
   );
