@@ -11,7 +11,7 @@ import Light from "./assets/moon.svg";
 export default function Header() {
   return (
     <>
-      <nav className="flex lg:px-10 justify-between px-4 py-3 lg:py-4 border-b-2 bg-white ">
+      <nav className="flex lg:px-10 justify-between px-4 py-3 lg:py-4 border-b-2 bg-white overflow-hidden">
         <div className="flex gap-3">
           {/* <svg fill="none" className="viewBox" width="24" height="24">
                 <path
@@ -58,7 +58,7 @@ export default function Header() {
                 className="h-10"
               /> */}
           <img src={Search} alt="" className="h-6 lg:block hidden mt-2" />
-          <button className="py-2 bg-blue-600 rounded-full px-4 text-white flex gap-2">
+          <button className="py-2 hidden bg-blue-600 rounded-full px-4 text-white lg:flex gap-2">
             <img src={Pen_white} className="h-6" />
             Write
           </button>
