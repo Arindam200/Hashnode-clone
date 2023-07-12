@@ -10,11 +10,11 @@ function Testimonial() {
         <span className="Home"> trust the community!</span>
       </h3>
 
-      <div className="mt-10 md:flex md:gap-10 justify-around space-y-10 md:space-y-0 p-10 pt-0">
+      <div className="mt-10 md:flex md:gap-10 justify-around space-y-10 md:space-y-0 sm:p-10 p-2 pt-0">
         <Simon />
         <Danny />
       </div>
-      <div className="md:flex md:gap-10 justify-around space-y-10 md:space-y-0 p-10 pt-0">
+      <div className="md:flex md:gap-10 justify-around space-y-10 md:space-y-0 sm:p-10 p-2 pt-0">
         <div className="rounded-xl bg-white md:w-1/2">
           <h1 className="p-8 ">
             &quot;After using Gastby, Ghost, Jekyll and Wordpress I&apos;m going
@@ -51,7 +51,7 @@ function Testimonial() {
           </h3>
         </div>
       </div>
-      <div className="md:flex md:gap-10 justify-around space-y-10 md:space-y-0 p-10 pt-0">
+      <div className="md:flex md:gap-10 justify-around space-y-10 md:space-y-0 sm:p-10 p-2 pt-0">
         <div className="rounded-xl bg-white">
           <h1 className="p-8 ">
             &quot;Hashnode is super developer-friendly. I like it much better
@@ -60,7 +60,7 @@ function Testimonial() {
           </h1>
           <img
             src="https://cdn.hashnode.com/res/hashnode/image/upload/v1596286836603/euVGAMiVZ.jpeg?auto=compress&w=200"
-            className="mx-auto mt-1 sm:h-20 rounded-full"
+            className="mx-auto mt-1 h-28 sm:h-20 rounded-full"
           />
           <h2 className="mt-2 flex justify-center text-lg font-semibold">
             Qiusheng Wu
