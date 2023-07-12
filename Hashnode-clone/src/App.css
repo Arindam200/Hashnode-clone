@@ -1,0 +1,22 @@
+.pro-banner {
+  background-image: linear-gradient(
+    249.02deg,
+    #3466f6 10.81%,
+    #3466f6 10.82%,
+    #7c3aed 91.65%
+  );
+}
+
+.Home {
+  display: inline;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #2563eb;
+  --tw-gradient-to: #9333ea;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+  color: transparent;
+}
