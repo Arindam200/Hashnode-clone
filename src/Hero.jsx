@@ -13,7 +13,7 @@ function Hero() {
               src={Hashnode}
             />
           </div>
-          <div className="md:space-y-10 w-auto md:w-3/5 lg:w-1/2">
+          <div className="md:space-y-10 w-auto md:w-3/5 space-y-5 lg:w-1/2">
             <h1 className="mt-2 text-center md:text-start text-4xl lg:text-6xl font-bold">
               <span className="Home">Home</span> for tech writers and readers
             </h1>
@@ -21,7 +21,7 @@ function Hero() {
               The hassle-free blogging platform for engineers, thought-leaders,
               and the dev community!
             </h2>
-            <h2 className="text-center lg:font-semibold md:text-start mx-6 md:mx-0 text-xl font-bold">
+            <h2 className="text-center lg:font-semibold md:text-start sm:mx-6 mx-2 md:mx-0 text-xl font-medium sm:font-bold">
               Blog on a custom domain, own your content and share your ideas
               with the world.
             </h2>
