@@ -8,7 +8,7 @@ export default function Simon() {
     "Full-Stack Engineer at SAP, Cloud Advocate - AWS Certified";
   return (
     <>
-      <div className="rounded-xl md:h-auto md:w-1/2 bg-white">
+      <div className="rounded-xl md:h-auto md:w-1/2 bg-white dark:bg-[#334155]">
         <h1 className="p-8 ">{quote}</h1>
         <img src={img_url} className="mx-auto h-28 rounded-full" />
         <h2 className="mt-2 flex justify-center text-lg font-semibold">

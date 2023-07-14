@@ -3,7 +3,7 @@ import Danny from "./Danny";
 
 function Testimonial() {
   return (
-    <div className="mx-4 lg:mx-20 xl:mx-36 2xl:mx-56 p-5 md:p-10 bg-[#f8fafc] border-x">
+    <div className="mx-4 lg:mx-20 xl:mx-36 2xl:mx-56 p-5 md:p-10 dark:bg-[#1e293b] bg-[#f8fafc] border-x">
       <h2 className="text-blue-600">TESTIMONIALS</h2>
       <h3 className="text-3xl lg:mt-5 md:text-5xl lg:w-4/5 md:w-2/3 md:pr-20 font-bold">
         Don&apos;t just take our word for it,{" "}
@@ -15,7 +15,7 @@ function Testimonial() {
         <Danny />
       </div>
       <div className="md:flex md:gap-10 justify-around space-y-10 md:space-y-0 sm:p-10 p-2 pt-0">
-        <div className="rounded-xl bg-white md:w-1/2">
+        <div className="rounded-xl  bg-white dark:bg-[#334155] md:w-1/2">
           <h1 className="p-8 ">
             &quot;After using Gastby, Ghost, Jekyll and Wordpress I&apos;m going
             to use Hashnode, I wished to have known this amazing project months
@@ -32,7 +32,7 @@ function Testimonial() {
             Tecnology Director at Le Site
           </h3>
         </div>
-        <div className="rounded-xl md:w-1/2 bg-white">
+        <div className="rounded-xl md:w-1/2  bg-white dark:bg-[#334155]">
           <h1 className="p-8 ">
             &quot;I am killing the blog off my personal site and going full on
             Hashnode. Reasons: - Personal Domain - Free Analytics - Free
@@ -52,7 +52,7 @@ function Testimonial() {
         </div>
       </div>
       <div className="md:flex md:gap-10 justify-around space-y-10 md:space-y-0 sm:p-10 p-2 pt-0">
-        <div className="rounded-xl bg-white">
+        <div className="rounded-xl  bg-white dark:bg-[#334155]">
           <h1 className="p-8 ">
             &quot;Hashnode is super developer-friendly. I like it much better
             than Medium. Being able to write blogs solely using markdown and
@@ -69,7 +69,7 @@ function Testimonial() {
             Assistant Professor at the University of Tennessee
           </h3>
         </div>
-        <div className="rounded-xl bg-white">
+        <div className="rounded-xl  bg-white dark:bg-[#334155]">
           <h1 className="p-8 ">
             &quot;100 days ago, I published my first blog post on a new and
             unfamiliar platform called Hashnode. Today, publishing articles on

@@ -5,7 +5,7 @@ import Hashnode from "./assets/asset 3.png";
 function Hero() {
   return (
     <>
-      <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 rounded-tl-lg border-x border-t rounded-tr-lg px-5 lg:pt-8 py-16">
+      <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 rounded-tl-lg border-x border-t rounded-tr-lg px-5 lg:pt-8 py-16 dark:bg-[#0f172a]">
         <div className="space-y-10 md:space-y-0 md:gap-2 gap-0 md:flex md:flex-row-reverse md:py-10 md:px-5 px-0 py-0">
           <div className="px-20 md:px-0 w-auto md:w-2/5 lg:w-1/2 sm:flex sm:justify-center justify-normal">
             <img
@@ -35,7 +35,7 @@ function Hero() {
 
         {/* <!-- Larson Box --> */}
         <div className="">
-          <div className="mt-24 lg:mt-0 lg:mx-4 md:flex gap-6 rounded-lg border border-slate-400 bg-[#f8fafc] p-8 md:p-10 md:gap-10">
+          <div className="mt-24 lg:mt-0 lg:mx-4 md:flex gap-6 rounded-lg border border-slate-400 dark:bg-[#334155] bg-[#f8fafc] p-8 md:p-10 md:gap-10">
             <div className="flex justify-center w-auto md:w-1/3">
               <img
                 src="https://cdn.hashnode.com/res/hashnode/image/upload/v1640878938509/PLqvxeH9g.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress"
@@ -66,8 +66,8 @@ function Hero() {
       </div>
 
       <Testimonial />
-      <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 mt-0 px-5 py-4 border-x">
-        <div className="mt-0 sm:mx-5 md:flex md:p-10 md:gap-10 space-y-5 rounded-lg border border-slate-400 bg-[#f8fafc] p-8">
+      <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 mt-0 px-5 py-4 border-x dark:bg-[#0f172a]">
+        <div className="mt-0 sm:mx-5 md:flex md:p-10 md:gap-10 space-y-5 rounded-lg border dark:bg-[#334155] border-slate-400 bg-[#f8fafc] p-8">
           <div className="flex justify-center w-auto md:w-1/3">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1636364350552/i6QmUq7eq.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress,format&format=webp&q=75"

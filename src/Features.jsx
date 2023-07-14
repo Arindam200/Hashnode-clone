@@ -14,9 +14,9 @@ import Hashnode from "./assets/logo-standard.jpg";
 
 function Features() {
   return (
-    <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 mt-0 border-x px-10 py-10">
+    <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 mt-0 border-x px-10 py-10 dark:bg-[#0f172a]">
       <div className="">
-        <div className="md:flex space-y-3 sm:space-y-0 md:p-10 md:gap-10 gap-10 rounded-lg border border-slate-900 bg-slate-100 p-8">
+        <div className="md:flex space-y-3 sm:space-y-0 md:p-10 md:gap-10 gap-10 rounded-lg border dark:bg-[#334155] border-slate-900 bg-slate-100 p-8">
           <div className="flex justify-center w-auto md:w-1/3">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1584725566758/W2boEyqqw.png?w=400&h=400&fit=crop&crop=faces&auto=compress,format&format=webp&q=75"
@@ -25,7 +25,7 @@ function Features() {
             />
           </div>
 
-          <div className=" space-y-2 sm:text-xl text-lg font-normal">
+          <div className=" space-y-2 sm:text-xl text-lg font-normal ">
             <h1>
               &quot;Just started out on Hashnode about 1 month ago, and I&apos;m
               already at 14,000 page views. Really impressed with how much

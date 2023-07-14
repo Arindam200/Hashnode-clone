@@ -1,3 +1,5 @@
+import { useState } from "react";
+import PropTypes from "prop-types";
 import Logo from "./assets/asset 13.svg";
 import Menu from "./assets/asset 12.svg";
 import Profile from "./assets/asset 0.png";
@@ -8,19 +10,28 @@ import Search from "./assets/asset 40.svg";
 import Notification from "./assets/asset 41.svg";
 import Light from "./assets/moon.svg";
 
-export default function Header() {
+export default function Header({ onThemeChange }) {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const handleThemeClick = () => {
+    onThemeChange(); // Call the callback function from App.jsx
+    console.log("executed");
+  };
+
   return (
     <>
-      <nav className="flex lg:px-10 justify-between px-4 py-3 lg:py-4 border-b-2 bg-white overflow-hidden">
+      <nav className="flex lg:px-10 justify-between px-4 py-3 lg:py-4 border-b-2 bg-whiteoverflow-hidden">
         <div className="flex gap-3">
-          {/* <svg fill="none" className="viewBox" width="24" height="24">
-                <path
-                  stroke="currentColor"
-                  d="M20.989 11.997H3M20.989 18H3M21 6H3"
-                ></path>
-              </svg> */}
-          <img src={Menu} className="xl:hidden" />
-          <img src={Logo} className="h-9 lg:hidden" />
+          <img src={Menu} className="xl:hidden" onClick={toggleNavbar} />
+          {isNavbarOpen && <div className="side-navbar">Hello World</div>}
+          <img
+            src={Logo}
+            className={`h-9 lg:hidden ${isNavbarOpen ? "hidden" : ""}`}
+          />
           <img src={Hashnode} className="h-7 mt-2 lg:block hidden" />
         </div>
         <div className="xl:flex gap-8 hidden">
@@ -63,7 +74,12 @@ export default function Header() {
             Write
           </button>
 
-          <img src={Light} alt="" className="h-6 mt-2 lg:block hidden" />
+          <img
+            src={Light}
+            alt="Theme"
+            className="h-6 mt-2 lg:block hidden"
+            onClick={handleThemeClick}
+          />
           <img src={Notification} className="h-6 lg:block hidden mt-2" />
           <img src={Pen} className="h-6 lg:hidden mt-2" />
           <img src={Profile} className="h-10" />
@@ -72,3 +88,6 @@ export default function Header() {
     </>
   );
 }
+Header.propTypes = {
+  onThemeChange: PropTypes.func.isRequired,
+};

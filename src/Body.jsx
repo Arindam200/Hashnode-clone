@@ -5,7 +5,7 @@ import Features from "./Features";
 
 function Body() {
   return (
-    <div className="flex">
+    <div className="flex ">
       <div className=" w-full overflow-hidden">
         <ProBanner />
         <Hero />

@@ -1,6 +1,6 @@
 function Teams() {
   return (
-    <div className="mt-14 -mx-5 sm:mx-0 rounded-lg border md:py-16 md:space-y-5 bg-white p-6">
+    <div className="mt-14 -mx-5 sm:mx-0 rounded-lg border md:py-16 md:space-y-5 dark:bg-[#334155] bg-white p-6">
       <div className="mt-5 md:flex space-y-2 justify-center gap-4">
         <button className="mx-auto max-sm:flex max-sm:justify-center text-sm sm:text-base md:mx-0 rounded-full bg-green-600 py-1 pl-5 pr-3 text-center text-white">
           NEW ✨
