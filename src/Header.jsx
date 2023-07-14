@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import Logo from "./assets/asset 13.svg";
+// import Logo_white from "./assets/logo-s-white.svg";
 import Menu from "./assets/asset 12.svg";
 import Profile from "./assets/asset 0.png";
 import Pen from "./assets/asset 17.svg";
@@ -19,7 +20,7 @@ export default function Header({ onThemeChange }) {
 
   const handleThemeClick = () => {
     onThemeChange(); // Call the callback function from App.jsx
-    console.log("executed");
+    // console.log("executed");
   };
 
   return (
@@ -32,6 +33,7 @@ export default function Header({ onThemeChange }) {
             src={Logo}
             className={`h-9 lg:hidden ${isNavbarOpen ? "hidden" : ""}`}
           />
+
           <img src={Hashnode} className="h-7 mt-2 lg:block hidden" />
         </div>
         <div className="xl:flex gap-8 hidden">
