@@ -5,7 +5,8 @@ import Logo_B from "./assets/asset 13.svg";
 import Logo_w from "./assets/logo-s-white.svg";
 import Menu_b from "./assets/Menu_b.svg";
 import Menu_w from "./assets/Menu_w.svg";
-import Cross from "./assets/cross.svg";
+import Cross_b from "./assets/cross_b.svg";
+import Cross_w from "./assets/cross_w.svg";
 import Profile from "./assets/asset 0.png";
 import Pen_b from "./assets/asset 17.svg";
 import Pen_white from "./assets/pen.svg";
@@ -40,6 +41,7 @@ export default function Header({ onThemeChange, isDarkTheme }) {
   const Pen = isDarkTheme ? Pen_white : Pen_b;
   const Menu = isDarkTheme ? Menu_w : Menu_b;
   const Search = isDarkTheme ? Search_w : Search_b;
+  const Cross = isDarkTheme ? Cross_w : Cross_b;
 
   return (
     <>
