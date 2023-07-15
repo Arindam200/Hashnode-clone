@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 function Map() {
   return (
-    <div className="mt-20 -mx-5 sm:mx-0 md:flex md:flex-row-reverse rounded-xl border bg-white py-6 px-8">
+    <div className="mt-20 -mx-5 sm:mx-0 md:flex md:flex-row-reverse rounded-xl border dark:bg-gradient-to-r dark:from-[#1f2937] dark:to-[#000] bg-gradient-to-r from-[#eff6ff] to-[#e9d5ff] py-6 px-8">
       <div className="mt-8 md:w-2/5">
         <img
           src="https://cdn.hashnode.com/res/hashnode/image/upload/v1643394967065/pOn8uxJFD.png?auto=compress"

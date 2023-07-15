@@ -20,3 +20,10 @@
   background-clip: text;
   color: transparent;
 }
+
+.dark-map {
+  --tw-gradient-from: #1f2937;
+  --tw-gradient-to: #000;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
