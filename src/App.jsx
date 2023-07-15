@@ -37,7 +37,7 @@ export default function App() {
               />
             </div>
           </div>
-          <BottomNav />
+          <BottomNav isDarkTheme={theme === "dark"} />
         </div>
       </div>
     </>

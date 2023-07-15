@@ -3,10 +3,11 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import Logo_B from "./assets/asset 13.svg";
 import Logo_w from "./assets/logo-s-white.svg";
-import Menu from "./assets/asset 12.svg";
+import Menu_b from "./assets/Menu_b.svg";
+import Menu_w from "./assets/Menu_w.svg";
 import Cross from "./assets/cross.svg";
 import Profile from "./assets/asset 0.png";
-import Pen from "./assets/asset 17.svg";
+import Pen_b from "./assets/asset 17.svg";
 import Pen_white from "./assets/pen.svg";
 import Hashnode_B from "./assets/logo-standard.jpg";
 import Hashnode_W from "./assets/logo_white.svg";
@@ -35,10 +36,12 @@ export default function Header({ onThemeChange, isDarkTheme }) {
   const Logo = isDarkTheme ? Logo_w : Logo_B;
   const Hashnode = isDarkTheme ? Hashnode_W : Hashnode_B;
   const Toggle = isDarkTheme ? Sun : Light;
+  const Pen = isDarkTheme ? Pen_white : Pen_b;
+  const Menu = isDarkTheme ? Menu_w : Menu_b;
 
   return (
     <>
-      <nav className="flex lg:px-10 justify-between px-4 py-3 lg:py-4 border-b-2 bg-whiteoverflow-hidden">
+      <nav className="flex lg:px-10 dark:bg-[#0f172a] justify-between px-4 py-3 lg:py-4 border-b-2 bg-whiteoverflow-hidden">
         <div className="flex gap-3">
           <img src={Menu} className="xl:hidden" onClick={toggleNavbar} />
           {isNavbarOpen && (
@@ -77,7 +80,9 @@ export default function Header({ onThemeChange, isDarkTheme }) {
           )}
           <img
             src={Logo}
-            className={`h-9 lg:hidden ${isNavbarOpen ? "hidden" : ""}`}
+            className={` h-8 mt-1 sm:h-9 lg:hidden ${
+              isNavbarOpen ? "hidden" : ""
+            }`}
           />
 
           <img src={Hashnode} className="h-7 mt-2 lg:block hidden" />
@@ -121,11 +126,11 @@ export default function Header({ onThemeChange, isDarkTheme }) {
             <img src={Pen_white} className="h-6" />
             Write
           </button>
-
+          <img src={Pen} className="h-6 lg:hidden mt-2" />
           <img
             src={Toggle}
             alt="Theme"
-            className="h-6 mt-2 lg:block hidden"
+            className="h-6 mt-2 lg:block "
             onClick={handleThemeClick}
           />
           <img src={notifIcon} className="h-6 lg:block hidden mt-2 " />
@@ -134,7 +139,7 @@ export default function Header({ onThemeChange, isDarkTheme }) {
             className="h-6  mt-2 lg:block hidden dark:block"
             alt=""
           /> */}
-          <img src={Pen} className="h-6 lg:hidden mt-2" />
+
           <img src={Profile} className="h-10" />
         </div>
       </nav>
