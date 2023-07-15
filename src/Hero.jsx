@@ -7,7 +7,7 @@ function Hero() {
     <>
       <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 rounded-tl-lg border-x border-t rounded-tr-lg px-5 lg:pt-8 py-16 dark:bg-[#0f172a]">
         <div className="space-y-10 md:space-y-0 md:gap-2 gap-0 md:flex md:flex-row-reverse md:py-10 md:px-5 px-0 py-0">
-          <div className="px-20 md:px-0 w-auto md:w-2/5 lg:w-1/2 sm:flex sm:justify-center justify-normal">
+          <div className="sm:px-20 px-10 md:px-0 w-auto md:w-2/5 lg:w-1/2 sm:flex sm:justify-center justify-normal">
             <img
               className="mr-12  sm:mr-0 sm:h-72 md:h-auto md:p-8 p-0"
               src={Hashnode}

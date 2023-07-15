@@ -22,7 +22,7 @@ function Map() {
           <button className="flex justify-center rounded-full bg-blue-600 sm:px-8 px-2 py-2 sm:py-3 text-sm sm:text-lg font-semibold text-white hover:bg-blue-800">
             Get Started- it's free
           </button>
-          <button className="flex px-6 justify-center rounded-full bg-inherit border border-blue-600 text-blue-600 text-sm sm:px-8 py-1 sm:py-3 sm:text-lg hover:bg-blue-800">
+          <button className="flex px-6 justify-center rounded-full bg-inherit border border-blue-600 text-blue-600 text-sm sm:px-8 py-1 sm:py-3 sm:text-lg hover:opacity-50">
             Login
           </button>
         </div>
