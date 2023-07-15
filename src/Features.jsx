@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+// import { useState } from "react";
 import Teams from "./Teams";
 import Map from "./Mapdiv";
 import NextLogo from "./assets/asset 26.svg";
@@ -10,9 +12,12 @@ import Drafts from "./assets/asset 32.svg";
 import HTTPS from "./assets/asset 33.svg";
 import GitHub from "./assets/asset 34.svg";
 import People from "./assets/asset 35.svg";
-import Hashnode from "./assets/logo-standard.jpg";
+import Hashnode_B from "./assets/logo-standard.jpg";
+import Hashnode_W from "./assets/logo_white.svg";
 
-function Features() {
+function Features({ isDarkTheme }) {
+  // const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const Hashnode = isDarkTheme ? Hashnode_W : Hashnode_B;
   return (
     <div className="m-4 lg:mx-20 xl:mx-36 2xl:mx-56 mb-0 mt-0 border-x px-10 py-10 dark:bg-[#0f172a]">
       <div className="">
