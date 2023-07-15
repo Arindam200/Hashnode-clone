@@ -11,7 +11,8 @@ import Pen_b from "./assets/asset 17.svg";
 import Pen_white from "./assets/pen.svg";
 import Hashnode_B from "./assets/logo-standard.jpg";
 import Hashnode_W from "./assets/logo_white.svg";
-import Search from "./assets/asset 40.svg";
+import Search_b from "./assets/search_b.svg";
+import Search_w from "./assets/search_w.svg";
 import Notification from "./assets/asset 41.svg";
 import Notif_w from "./assets/bell_white.svg";
 import Light from "./assets/moon.svg";
@@ -38,6 +39,7 @@ export default function Header({ onThemeChange, isDarkTheme }) {
   const Toggle = isDarkTheme ? Sun : Light;
   const Pen = isDarkTheme ? Pen_white : Pen_b;
   const Menu = isDarkTheme ? Menu_w : Menu_b;
+  const Search = isDarkTheme ? Search_w : Search_b;
 
   return (
     <>
