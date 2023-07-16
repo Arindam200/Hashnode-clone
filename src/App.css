@@ -27,3 +27,14 @@
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
+.Stylish {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 20;
+  margin-top: -5rem;
+  margin-right: -7rem;
+  width: 60%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}

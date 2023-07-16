@@ -34,6 +34,16 @@ export default function Header({ onThemeChange, isDarkTheme }) {
     // console.log("executed");
     // setIsDarkTheme(!isDarkTheme);
   };
+  const [isOpen, setIsOpen] = useState(false);
+  const [isBellOpen, setIsBellOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+  const toggleDropdown1 = () => {
+    setIsBellOpen(!isBellOpen);
+  };
+
   const notifIcon = isDarkTheme ? Notif_w : Notification;
   const Logo = isDarkTheme ? Logo_w : Logo_B;
   const Hashnode = isDarkTheme ? Hashnode_W : Hashnode_B;
@@ -118,13 +128,6 @@ export default function Header({ onThemeChange, isDarkTheme }) {
           </button> */}
         </div>
         <div className="flex gap-5 lg:gap-6">
-          {/* <img
-                alt="Profile"
-                src="https://cdn.hashnode.com/res/hashnode/image/upload/v1659089761812/fsOct5gl6.png"
-                decoding="async"
-                data-nimg="fill"
-                className="h-10"
-              /> */}
           <img src={Search} alt="" className="h-6 lg:block hidden mt-2" />
           <button className="py-2 hidden bg-blue-600 rounded-full px-4 text-white lg:flex gap-2">
             <img src={Pen_white} className="h-6" />
@@ -137,14 +140,62 @@ export default function Header({ onThemeChange, isDarkTheme }) {
             className="h-6 mt-2 lg:block "
             onClick={handleThemeClick}
           />
-          <img src={notifIcon} className="h-6 lg:block hidden mt-2 " />
+          <img
+            src={notifIcon}
+            className="h-6 lg:block hidden mt-2 "
+            onClick={toggleDropdown1}
+          />
+          {isBellOpen && (
+            <div className="fixed top-20 right-18">
+              <div className=" z-50 min-w-[198px] flex flex-col gap-2 h-auto bg-white  rounded-xl shadow-xl w-[280px] py-2 outline-none dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <div className="p-4">
+                  <img src={Profile} className="h-16 mx-auto mb-5" alt="" />
+                  <h2 className="mb-2 ml-1 text-2xl text-start font-bold font-heading text-slate-700 dark:text-slate-200 ">
+                    Sign in to see notifications from your favorite tech
+                    writers!
+                  </h2>
+                  <h3 className="mb-5 ml-1 text-base text-slate-600 dark:text-slate-300">
+                    Learn insights from developers and people in tech from
+                    around the world. Grow 1% every day.
+                  </h3>
+
+                  <button className="px-[18px] w-full py-2.5 rounded-full text-white text-sm font-medium flex items-center justify-center gap-2 bg-blue-600 ">
+                    Let&apos;s Start
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
           {/* <img
             src={Notif_w}
             className="h-6  mt-2 lg:block hidden dark:block"
             alt=""
           /> */}
 
-          <img src={Profile} className="h-10" />
+          <img src={Profile} className="h-10" onClick={toggleDropdown} />
+          {isOpen && (
+            <div className="fixed top-20 right-5">
+              <div className=" z-50 min-w-[198px] flex flex-col gap-2 h-auto bg-white  rounded-xl shadow-xl w-[260px] py-2 outline-none dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                <div className="p-3">
+                  <img src={Profile} className="h-16 mx-auto mb-5" alt="" />
+                  <h2 className="mb-2 text-xl font-bold font-heading text-slate-700 dark:text-slate-200 text-center">
+                    Sign up or log in to your Hashnode account
+                  </h2>
+                  <h3 className="mb-5 text-center text-base text-slate-600 dark:text-slate-300">
+                    Takes only a few seconds
+                  </h3>
+                  <div className="space-y-3">
+                    <button className="px-[18px] w-full py-2.5 rounded-full text-white text-sm font-medium flex items-center justify-center gap-2 bg-blue-600 ">
+                      Sign up
+                    </button>
+                    <button className="px-[18px] text-blue-600 w-full py-2.5 rounded-full  text-sm font-medium flex items-center justify-center gap-2 border border-blue-600 hover:bg-blue-50 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700">
+                      Log in
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
     </>
@@ -153,3 +204,13 @@ export default function Header({ onThemeChange, isDarkTheme }) {
 Header.propTypes = {
   onThemeChange: PropTypes.func.isRequired,
 };
+
+{
+  /* <img
+                alt="Profile"
+                src="https://cdn.hashnode.com/res/hashnode/image/upload/v1659089761812/fsOct5gl6.png"
+                decoding="async"
+                data-nimg="fill"
+                className="h-10"
+              /> */
+}
