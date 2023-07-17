@@ -6,7 +6,7 @@ function FeatArticle() {
         Featured articles today
       </h2>
       <div className="mt-14 justify-around space-y-5 px-1 sm:px-4">
-        <div className="md:flex space-y-5 md:gap-10">
+        <div className="md:flex space-y-5 lg:space-y-0 md:gap-10">
           <div className="rounded-lg   bg-white dark:bg-[#334155]">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1686011601747/bf5532a0-6d78-41fa-9232-f4479ca4b78b.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
@@ -34,7 +34,7 @@ function FeatArticle() {
               </div>
             </div>
           </div>
-          <div className="rounded-lg    bg-white dark:bg-[#334155]">
+          <div className="rounded-lg bg-white dark:bg-[#334155]">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1686041046237/9816c13f-4921-4649-b395-ce5b20d8cb1a.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
               className="rounded-tl-lg rounded-tr-lg"
@@ -62,8 +62,8 @@ function FeatArticle() {
             </div>
           </div>
         </div>
-        <div className="md:flex space-y-5 md:gap-10">
-          <div className="rounded-lg   bg-white dark:bg-[#334155]">
+        <div className="md:flex space-y-5 lg:space-y-0 md:gap-10">
+          <div className="rounded-lg bg-white dark:bg-[#334155]">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1685860276418/69ab5b08-611a-44dc-ab14-3dd9ffad63ec.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
               className="rounded-tl-lg rounded-tr-lg"
@@ -120,7 +120,7 @@ function FeatArticle() {
             </div>
           </div>
         </div>
-        <div className="md:flex space-y-5 md:gap-10">
+        <div className="md:flex space-y-5 lg:space-y-0 md:gap-10">
           <div className="rounded-lg   bg-white dark:bg-[#334155]">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1686020838726/9f4e918a-d62c-4baa-9d83-cb30e423bdcc.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
