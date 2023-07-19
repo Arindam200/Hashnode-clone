@@ -1,6 +1,6 @@
 import Nextpart from "./Nextpart";
-import Testimonial from "./Testimonials/Testimonial";
-import Hashnode from "./assets/asset 3.png";
+import Testimonial from "../Testimonials/Testimonial";
+import Hashnode from "../assets/asset 3.png";
 // import Stylish from "./assets/asset 1.png";
 
 function Hero() {

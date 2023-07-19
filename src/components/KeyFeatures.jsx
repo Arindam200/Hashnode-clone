@@ -1,8 +1,7 @@
-import GitHub from "./assets/asset 22.svg";
-import Markdown from "./assets/asset 23.svg";
-import Globe from "./assets/asset 24.svg";
-import Light from "./assets/asset 25.svg";
-
+import GitHub from "../assets/asset 22.svg";
+import Markdown from "../assets/asset 23.svg";
+import Globe from "../assets/asset 24.svg";
+import Light from "../assets/asset 25.svg";
 
 const keyFeaturesData = [
   {
@@ -74,21 +73,6 @@ function KeyFeatures() {
 }
 
 export default KeyFeatures;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function KeyFeatures() {
 //   return (
