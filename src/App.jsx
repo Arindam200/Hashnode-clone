@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./Header";
-// import Body from "./Body";
-import BottomNav from "./Bottom-nav";
-import ProBanner from "./ProBanner";
-import Hero from "./Hero";
-import FeatArticles from "./FeatArticles";
-import Features from "./Features";
+import Header from "./components/Header";
+import BottomNav from "./components/Bottom-nav";
+import ProBanner from "./components/ProBanner";
+import Hero from "./components/Hero";
+import FeatArticles from "./components/FeatArticles";
+import Features from "./components/Features";
 
 export default function App() {
   const [theme, setTheme] = useState("light");

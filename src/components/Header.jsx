@@ -1,25 +1,25 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import PropTypes from "prop-types";
-import Logo_B from "./assets/asset 13.svg";
-import Logo_w from "./assets/logo-s-white.svg";
-import Menu_b from "./assets/Menu_b.svg";
-import Menu_w from "./assets/Menu_w.svg";
-import Cross_b from "./assets/cross_b.svg";
-import Cross_w from "./assets/cross_w.svg";
-import Profile from "./assets/asset 0.png";
-import Pen_b from "./assets/asset 17.svg";
-import Pen_white from "./assets/pen.svg";
-import Hashnode_B from "./assets/logo-standard.jpg";
-import Hashnode_W from "./assets/logo_white.svg";
-import Search_b from "./assets/search_b.svg";
-import Search_w from "./assets/search_w.svg";
-import Notification from "./assets/asset 41.svg";
-import Notif_w from "./assets/bell_white.svg";
-import Light from "./assets/moon.svg";
-import Sun from "./assets/sun.svg";
-import Rix from "./assets/Rix_1.svg";
-import Down_b from "./assets/black_cross.svg";
+import Logo_B from "../assets/asset 13.svg";
+import Logo_w from "../assets/logo-s-white.svg";
+import Menu_b from "../assets/Menu_b.svg";
+import Menu_w from "../assets/Menu_w.svg";
+import Cross_b from "../assets/cross_b.svg";
+import Cross_w from "../assets/cross_w.svg";
+import Profile from "../assets/asset 0.png";
+import Pen_b from "../assets/asset 17.svg";
+import Pen_white from "../assets/pen.svg";
+import Hashnode_B from "../assets/logo-standard.jpg";
+import Hashnode_W from "../assets/logo_white.svg";
+import Search_b from "../assets/search_b.svg";
+import Search_w from "../assets/search_w.svg";
+import Notification from "../assets/asset 41.svg";
+import Notif_w from "../assets/bell_white.svg";
+import Light from "../assets/moon.svg";
+import Sun from "../assets/sun.svg";
+import Rix from "../assets/Rix_1.svg";
+import Down_b from "../assets/black_cross.svg";
 
 export default function Header({ onThemeChange, isDarkTheme }) {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
