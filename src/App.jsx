@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./Header";
-// import Body from "./Body";
-import BottomNav from "./Bottom-nav";
-import ProBanner from "./ProBanner";
-import Hero from "./Hero";
-import FeatArticles from "./FeatArticles";
-import Features from "./Features";
+import Header from "./components/Header";
+import BottomNav from "./components/Bottom-nav";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import MyFeed from "./Myfeed";
+import Explore from "./Explore";
+import Bookmarks from "./Bookmarks";
+import More from "./More";
+import Rix from "./Rix";
 
 export default function App() {
   const [theme, setTheme] = useState("light");
@@ -26,17 +28,19 @@ export default function App() {
       <div className="dark:bg-black dark:text-white">
         <div>
           <Header onThemeChange={toggleTheme} isDarkTheme={theme === "dark"} />
-          <div className="flex ">
-            <div className=" w-full overflow-hidden">
-              <ProBanner />
-              <Hero />
-              <FeatArticles />
-              <Features
-                isDarkTheme={theme === "dark"}
-                toggleTheme={toggleTheme}
-              />
-            </div>
-          </div>
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<Home theme={theme} toggle={toggleTheme} />}
+            />
+            <Route exact path="/myfeed" element={<MyFeed />} />
+            <Route exact path="/explore" element={<Explore />} />
+            <Route exact path="/bookmarks" element={<Bookmarks />} />
+            <Route exact path="/more" element={<More />} />
+            <Route exact path="/rix" element={<Rix />} />
+          </Routes>
+
           <BottomNav isDarkTheme={theme === "dark"} />
         </div>
       </div>

@@ -2,18 +2,18 @@
 // import { useState } from "react";
 import Teams from "./Teams";
 import Map from "./Mapdiv";
-import NextLogo from "./assets/asset 26.svg";
-import Data from "./assets/asset 27.svg";
-import Pen from "./assets/asset 28.svg";
-import NewsLetter from "./assets/asset 29.svg";
-import Analytics from "./assets/asset 30.svg";
-import Series from "./assets/asset 31.svg";
-import Drafts from "./assets/asset 32.svg";
-import HTTPS from "./assets/asset 33.svg";
-import GitHub from "./assets/asset 34.svg";
-import People from "./assets/asset 35.svg";
-import Hashnode_B from "./assets/logo-standard.jpg";
-import Hashnode_W from "./assets/logo_white.svg";
+import NextLogo from "../assets/asset 26.svg";
+import Data from "../assets/asset 27.svg";
+import Pen from "../assets/asset 28.svg";
+import NewsLetter from "../assets/asset 29.svg";
+import Analytics from "../assets/asset 30.svg";
+import Series from "../assets/asset 31.svg";
+import Drafts from "../assets/asset 32.svg";
+import HTTPS from "../assets/asset 33.svg";
+import GitHub from "../assets/asset 34.svg";
+import People from "../assets/asset 35.svg";
+import Hashnode_B from "../assets/logo-standard.jpg";
+import Hashnode_W from "../assets/logo_white.svg";
 
 function Features({ isDarkTheme }) {
   // const [isDarkTheme, setIsDarkTheme] = useState(false);
