@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import Feed_b from "./assets/Feed_b.svg";
-import Feed_w from "./assets/Feed_w.svg";
-import Bookmark_b from "./assets/Bookmark_b.svg";
-import Bookmark_w from "./assets/Bookmark_w.svg";
-import Search_b from "./assets/search_b.svg";
-import Search_w from "./assets/search_w.svg";
-import Notification from "./assets/asset 41.svg";
-import Notif_w from "./assets/bell_white.svg";
+import Feed_b from "../assets/Feed_b.svg";
+import Feed_w from "../assets/Feed_w.svg";
+import Bookmark_b from "../assets/Bookmark_b.svg";
+import Bookmark_w from "../assets/Bookmark_w.svg";
+import Search_b from "../assets/search_b.svg";
+import Search_w from "../assets/search_w.svg";
+import Notification from "../assets/asset 41.svg";
+import Notif_w from "../assets/bell_white.svg";
 
 function BottomNav({ isDarkTheme }) {
   const notifIcon = isDarkTheme ? Notif_w : Notification;
