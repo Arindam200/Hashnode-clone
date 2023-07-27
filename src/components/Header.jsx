@@ -21,13 +21,18 @@ import Sun from "../assets/sun.svg";
 import Rix from "../assets/Rix_1.svg";
 import Down_b from "../assets/black_cross.svg";
 import { Link } from "react-router-dom";
+import SearchModal from "./SearchModal";
 
 export default function Header({ onThemeChange, isDarkTheme }) {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   // const [isDarkTheme, setIsDarkTheme] = useState(false);
-
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => {
+    setModal(!modal);
   };
 
   const handleThemeClick = () => {
@@ -134,7 +139,14 @@ export default function Header({ onThemeChange, isDarkTheme }) {
           </button> */}
         </div>
         <div className="flex gap-5 lg:gap-6">
-          <img src={Search} alt="" className="h-6 lg:block hidden mt-2" />
+          <img
+            src={Search}
+            onClick={toggleModal}
+            alt=""
+            className="h-6 lg:block hidden mt-2"
+          />
+          {modal && <SearchModal onClose={toggleModal} />}
+
           <button className="py-2 hidden bg-blue-600 rounded-full px-4 text-white lg:flex gap-2">
             <img src={Pen_white} className="h-6" />
             Write
