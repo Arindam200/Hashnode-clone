@@ -10,6 +10,12 @@ const Myfeed = () => {
       {/* Left Section */}
       <div className="w-7/12 max-lg:w-full max-lg:p-3 space-y-5">
         <Blogs />
+        <Blogs />
+        <Blogs />
+        <Blogs />
+        <Blogs />
+        <Blogs />
+        <Blogs />
       </div>
       {/* Right Section */}
       <div className="w-3/12 max-lg:hidden space-y-5">
