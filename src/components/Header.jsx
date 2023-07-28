@@ -87,20 +87,18 @@ export default function Header({ onThemeChange, isDarkTheme }) {
                   <Link to="/bookmarks">Bookmarks</Link>
                 </li>
                 <li className="flex flex-row justify-between items-center gap-2 w-full py-2 px-3 rounded-lg font-sans cursor-pointer transition-colors duration-150 ease-in-out active:bg-slate-100 dark:active:bg-slate-800 md:hover:bg-slate-100 md:dark:hover:bg-slate-800 focus:outline-none text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  <Link to="/more">
-                    More
-                    <img src={Down_b} className="h-7" alt="" />{" "}
-                  </Link>
+                  <Link to="/more">More </Link>
+                  <img src={Down_b} className="h-7" alt="" />{" "}
                 </li>
               </ul>
               <div className="py-2 px-3">
                 <button className="flex flex-row items-center gap-2 w-full py-2 px-3 rounded-lg font-sans cursor-pointer transition-colors duration-150 ease-in-out active:bg-slate-100 dark:active:bg-slate-800 md:hover:bg-slate-100 md:dark:hover:bg-slate-800 focus:outline-none text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  <Link to="/rix">
+                  <Link className="flex" to="/rix">
                     {" "}
                     Rix
-                    <img src={Rix} alt="" className="h-5" />
-                    {/* <Rix></Rix> */}
                   </Link>
+                  <img src={Rix} alt="" className="h-5" />
+                  {/* <Rix></Rix> */}
                 </button>
               </div>
             </div>
