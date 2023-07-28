@@ -61,7 +61,7 @@ export default function Header({ onThemeChange, isDarkTheme }) {
 
   return (
     <>
-      <nav className="flex lg:px-10 dark:bg-[#0f172a] justify-between px-4 py-3 lg:py-4 border-b-2 bg-whiteoverflow-hidden">
+      <nav className="flex lg:px-10 dark:bg-[#0f172a] justify-between px-4 py-3 lg:py-4 dark:border-slate-900 border-b-2 bg-whiteoverflow-hidden">
         <div className="flex gap-3">
           <img src={Menu} className="xl:hidden" onClick={toggleNavbar} />
           {isNavbarOpen && (
