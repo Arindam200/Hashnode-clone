@@ -78,23 +78,29 @@ export default function Header({ onThemeChange, isDarkTheme }) {
               <ul className="py-4 px-3 border-b border-slate-200 dark:border-slate-800">
                 <li className="flex flex-row justify-between items-center gap-2 w-full py-2 px-3 rounded-lg font-sans cursor-pointer transition-colors duration-150 ease-in-out active:bg-slate-100 dark:active:bg-slate-800 md:hover:bg-slate-100 md:dark:hover:bg-slate-800 focus:outline-none text-slate-600 dark:text-slate-300 text-lg font-semibold">
                   {" "}
-                  My feed
+                  <Link to="/myfeed">My feed</Link>
                 </li>
                 <li className="flex flex-row justify-between items-center gap-2 w-full py-2 px-3 rounded-lg font-sans cursor-pointer transition-colors duration-150 ease-in-out active:bg-slate-100 dark:active:bg-slate-800 md:hover:bg-slate-100 md:dark:hover:bg-slate-800 focus:outline-none text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  Explore
+                  <Link to="/explore">Explore</Link>
                 </li>
                 <li className="flex flex-row justify-between items-center gap-2 w-full py-2 px-3 rounded-lg font-sans cursor-pointer transition-colors duration-150 ease-in-out active:bg-slate-100 dark:active:bg-slate-800 md:hover:bg-slate-100 md:dark:hover:bg-slate-800 focus:outline-none text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  Bookmarks
+                  <Link to="/bookmarks">Bookmarks</Link>
                 </li>
                 <li className="flex flex-row justify-between items-center gap-2 w-full py-2 px-3 rounded-lg font-sans cursor-pointer transition-colors duration-150 ease-in-out active:bg-slate-100 dark:active:bg-slate-800 md:hover:bg-slate-100 md:dark:hover:bg-slate-800 focus:outline-none text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  More <img src={Down_b} className="h-7" alt="" />
+                  <Link to="/more">
+                    More
+                    <img src={Down_b} className="h-7" alt="" />{" "}
+                  </Link>
                 </li>
               </ul>
               <div className="py-2 px-3">
                 <button className="flex flex-row items-center gap-2 w-full py-2 px-3 rounded-lg font-sans cursor-pointer transition-colors duration-150 ease-in-out active:bg-slate-100 dark:active:bg-slate-800 md:hover:bg-slate-100 md:dark:hover:bg-slate-800 focus:outline-none text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  Rix
-                  <img src={Rix} alt="" className="h-5" />
-                  {/* <Rix></Rix> */}
+                  <Link to="/rix">
+                    {" "}
+                    Rix
+                    <img src={Rix} alt="" className="h-5" />
+                    {/* <Rix></Rix> */}
+                  </Link>
                 </button>
               </div>
             </div>
