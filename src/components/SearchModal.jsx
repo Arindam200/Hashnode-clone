@@ -8,7 +8,7 @@ export default function SearchModal({ onClose, isDarkTheme }) {
           onClick={onClose}
           className="fixed inset-0 z-40 bg-gray-700 bg-opacity-50 backdrop-blur"
         ></div>
-        <div className=" dark:bg-[#0f172a] z-50 w-7/12 max-w-[950px] overflow-hidden rounded-xl  bg-white shadow-lg">
+        <div className=" dark:bg-[#0f172a] z-50 w-7/12 max-w-[950px] overflow-hidden rounded-xl bg-white shadow-lg">
           <header className="p-4 pb-0 pt-6">
             <div className="relative flex-1">
               <input
@@ -30,10 +30,10 @@ export default function SearchModal({ onClose, isDarkTheme }) {
                   >
                     <path
                       d="M21 21L15.8091 15.8091M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
-                      stroke-width="1.5px"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      fill-opacity="0"
+                      strokeWidth="1.5px"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fillOpacity="0"
                       className="dark:stroke-[#64748b] text-primary hidden h-4 w-4 stroke-gray-700 md:block"
                     ></path>
                   </svg>
