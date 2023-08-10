@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import Logo_B from "../assets/asset 13.svg";
 import Logo_w from "../assets/logo-s-white.svg";
@@ -49,6 +49,29 @@ export default function Header({ onThemeChange, isDarkTheme }) {
   const toggleDropdown1 = () => {
     setIsBellOpen(!isBellOpen);
   };
+
+  const dropdownRef = useRef(null);
+  const bellDropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+      if (
+        bellDropdownRef.current &&
+        !bellDropdownRef.current.contains(event.target)
+      ) {
+        setIsBellOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const notifIcon = isDarkTheme ? Notif_w : Notification;
   const Logo = isDarkTheme ? Logo_w : Logo_B;
@@ -165,6 +188,7 @@ export default function Header({ onThemeChange, isDarkTheme }) {
           />
           <img
             src={notifIcon}
+            ref={bellDropdownRef}
             className="h-6 lg:block hidden mt-2 "
             onClick={toggleDropdown1}
           />
@@ -195,7 +219,12 @@ export default function Header({ onThemeChange, isDarkTheme }) {
             alt=""
           /> */}
 
-          <img src={Profile} className="h-10" onClick={toggleDropdown} />
+          <img
+            src={Profile}
+            ref={dropdownRef}
+            className="h-10"
+            onClick={toggleDropdown}
+          />
           {isOpen && (
             <div className="fixed top-20 right-5">
               <div className=" z-50 min-w-[198px] flex flex-col gap-2 h-auto bg-white  rounded-xl shadow-xl w-[260px] py-2 outline-none dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
