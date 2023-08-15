@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import Logo_B from "../assets/asset 13.svg";
 import Logo_w from "../assets/logo-s-white.svg";
@@ -62,7 +63,7 @@ export default function Header({ onThemeChange, isDarkTheme }) {
         bellDropdownRef.current &&
         !bellDropdownRef.current.contains(event.target)
       ) {
-        setIsBellOpen(false); 
+        setIsBellOpen(false);
       }
     };
 
