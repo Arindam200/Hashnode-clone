@@ -191,7 +191,7 @@ export default function Header({ onThemeChange, isDarkTheme }) {
           </motion.a>
           <img src={Pen} className="h-6 lg:hidden mt-2" />
           <motion.a
-            className="lg:block hidden"
+            className="lg:block "
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
           >
