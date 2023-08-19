@@ -171,31 +171,49 @@ export default function Header({ onThemeChange, isDarkTheme }) {
           </button> */}
         </div>
         <div className="flex gap-5 lg:gap-6">
-          <img
-            src={Search}
-            onClick={toggleModal}
-            alt=""
-            className="h-6 lg:block hidden mt-2"
-          />
+          <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+            <img
+              src={Search}
+              onClick={toggleModal}
+              alt=""
+              className="h-6 lg:block hidden mt-2"
+            />
+          </motion.a>
           {modal && <SearchModal onClose={toggleModal} />}
 
-          <button className="py-2 hidden bg-blue-600 rounded-full px-4 text-white lg:flex gap-2">
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            className="py-2 hidden bg-blue-600 rounded-full px-4 text-white lg:flex gap-2"
+          >
             <img src={Pen_white} className="h-6" />
             Write
-          </button>
+          </motion.a>
           <img src={Pen} className="h-6 lg:hidden mt-2" />
-          <img
-            src={Toggle}
-            alt="Theme"
-            className="h-6 mt-2 lg:block "
-            onClick={handleThemeClick}
-          />
-          <img
-            src={notifIcon}
-            ref={bellDropdownRef}
-            className="h-6 lg:block hidden mt-2 "
-            onClick={toggleDropdown1}
-          />
+          <motion.a
+            className="lg:block hidden"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <img
+              src={Toggle}
+              alt="Theme"
+              className="h-6 mt-2 lg:block "
+              onClick={handleThemeClick}
+            />
+          </motion.a>
+          <motion.a
+            className="lg:block hidden"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <img
+              src={notifIcon}
+              ref={bellDropdownRef}
+              className="h-6 lg:block hidden mt-2 "
+              onClick={toggleDropdown1}
+            />
+          </motion.a>
           {isBellOpen && (
             <div className="fixed top-20 right-18">
               <div className=" z-50 min-w-[198px] flex flex-col gap-2 h-auto bg-white  rounded-xl shadow-xl w-[280px] py-2 outline-none dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
@@ -225,13 +243,14 @@ export default function Header({ onThemeChange, isDarkTheme }) {
             className="h-6  mt-2 lg:block hidden dark:block"
             alt=""
           /> */}
-
-          <img
-            src={Profile}
-            ref={dropdownRef}
-            className="h-10"
-            onClick={toggleDropdown}
-          />
+          <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+            <img
+              src={Profile}
+              ref={dropdownRef}
+              className="h-10"
+              onClick={toggleDropdown}
+            />
+          </motion.a>
           {isOpen && (
             <div className="fixed top-20 right-5">
               <div className=" z-50 min-w-[198px] flex flex-col gap-2 h-auto bg-white  rounded-xl shadow-xl w-[260px] py-2 outline-none dark:bg-slate-900 border border-slate-200 dark:border-slate-800">

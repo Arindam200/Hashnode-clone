@@ -14,13 +14,9 @@ const Home = (props) => {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <div className="flex ">
             <div className=" w-full overflow-hidden">
-              {/* <Reveal> */}
               <ProBanner />
               <Hero />
-              {/* </Reveal> */}
-              {/* <Reveal> */}
               <FeatArticles />
-              {/* </Reveal> */}
               <Features isDarkTheme={props.theme} toggleTheme={props.toggle} />
             </div>
           </div>

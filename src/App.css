@@ -35,6 +35,11 @@
   margin-top: -5rem;
   margin-right: -7rem;
   width: 60%;
-  overflow-clip-margin: content-box;
+  /* overflow-clip-margin: content-box; */
   overflow: clip;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
