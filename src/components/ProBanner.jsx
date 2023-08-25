@@ -13,7 +13,7 @@ function ProBanner() {
         </span>
       </div>
 
-      <button className="w-fit lg:w-1/6 lg:ml-10 px-4 rounded-full bg-inherit text-white border-white border py-1 hover:bg-slate-200">
+      <button className="w-fit hover:bg-blue-700 lg:w-1/6 lg:ml-10 px-4 rounded-full bg-inherit text-white border-white border py-1">
         Try it now!
       </button>
     </div>
