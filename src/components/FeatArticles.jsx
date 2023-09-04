@@ -1,7 +1,6 @@
 import { motion, MotionConfig } from "framer-motion";
 import Reveal from "../Reveal";
 
-
 function FeatArticle() {
   return (
     <div className="m-4  xl:mx-36 2xl:mx-56 mb-0 mt-0  bg-[#0f172a] border-x  px-5 py-12">
@@ -9,7 +8,6 @@ function FeatArticle() {
       <h2 className="flex justify-center text-center sm:text-start  text-4xl sm:text-4xl md:text-5xl font-bold text-white">
         Featured articles today
       </h2>
-     
 
       {/* <Reveal> */}
       <div className="mt-14 justify-around space-y-5 px-1 sm:px-4">
